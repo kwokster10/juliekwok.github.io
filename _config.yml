@@ -14,8 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Julie Kwok
-email: info@juliekwok.com
-description: Portfolio site for web developer, Julie Kwok.
+description: Portfolio site for fullstack web developer, Julie Kwok.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: http://juliekwok.com # the base hostname & protocol for your site, e.g. http://example.com
 
