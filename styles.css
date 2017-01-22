@@ -1,0 +1,377 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-color: #222;
+}
+
+.wrapper {
+  margin-top: 75px;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.home {
+  display: inline-block;
+}
+
+.hexagon {
+  float: left;
+  margin-right: -54px;
+  margin-bottom: 7px;
+}
+
+.hexagon .left {
+  float: left;
+  width: 0;
+  border-right: 60px solid #FFF;
+  border-top: 104px solid transparent;
+  border-bottom: 104px solid transparent;
+}
+
+.hexagon .middle {
+  text-align: center;
+  float: left;
+  width: 120px;
+  height: 208px;
+  line-height: 208px;
+  background: #FFF;
+}
+
+.hexagon .right {
+  float: left;
+  width: 0;
+  border-left: 60px solid #FFF;
+  border-top: 104px solid transparent;
+  border-bottom: 104px solid transparent;
+}
+
+.hexagon-row {
+  clear: left;
+}
+
+.hexagon-row:nth-child(2) {
+  margin-left: 186px;
+}
+
+.hexagon.even {
+  margin-top: 106px;
+}
+
+.hex-inner:hover {
+  opacity: 0.7;
+}
+
+.color-one.middle {
+  background: #C86B85;
+}
+
+.color-one.left {
+  border-right-color: #C86B85;
+}
+
+.color-one.right {
+  border-left-color: #C86B85;
+}
+
+.color-two.middle {
+  background: #2F939F;
+}
+
+.color-two.left {
+  border-right-color: #2F939F;
+}
+
+.color-two.right {
+  border-left-color: #2F939F;
+}
+
+.color-three.middle {
+  background: #FFC437;
+}
+
+.color-three.left {
+  border-right-color: #FFC437;
+}
+
+.color-three.right {
+  border-left-color: #FFC437;
+}
+
+.color-four.middle {
+  background: #6E2032;
+}
+
+.color-four.left {
+  border-right-color: #6E2032;
+}
+
+.color-four.right {
+  border-left-color: #6E2032;
+}
+
+.post-link {
+  color: #FFF;
+}
+
+.post-link > .color-five, .post-link > .color-three {
+  color: #1F2D3D;
+}
+
+.hex-inner-wrapper {
+  margin-top: 59%;
+  margin-left: 14%;
+}
+
+.hex-inner {
+  margin-top: -39px;
+  width: 40px;
+  height: 68px;
+  background-color: white;
+  position: relative;
+  top: 3px;
+  left: 3px;
+}
+
+.hex-inner:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 34px solid transparent;
+  border-bottom: 34px solid transparent;
+  position: absolute;
+  right: -20px;
+}
+
+.hex-inner:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  left: -20px;
+  border-right: 20px solid white;
+  border-top: 34px solid transparent;
+  border-bottom: 34px solid transparent;
+}
+
+.middle.color-two {
+  text-transform: uppercase;
+}
+
+.middle.color-four {
+  line-height: 65px;
+  color: white;
+}
+
+.middle.color-three {
+  position: relative;
+}
+
+.projects {
+  position: absolute;
+  top: -80px;
+  right: 30px;
+}
+
+.middle.color-three > .hex-inner-wrapper {
+  margin-top: 70%;
+}
+
+.middle.color-four > .hex-inner-wrapper {
+  margin-top: 28%;
+  margin-left: 3%;
+}
+
+.hex-about {
+  position: relative;
+}
+
+.hex-inner.about {
+  position: absolute;
+  top: 48%;
+  left: 42%;
+  background: white url("./images/envelope.png") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.hex-inner-link-2 div {
+  margin-left: 63px;
+  margin-top: -33px;
+}
+
+.hex-inner-link-3 div {
+  margin-top: -32px;
+}
+
+.github {
+  background: white url("./images/github.png") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.linkedin {
+  background: white url("./images/linkedin.png") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.medium {
+  background: white url("./images/medium.png") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.cyrus_innovation {
+  background: white url("./images/cyrus.png") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.xo_group {
+  background: white url("./images/xo_group.png") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+@media (max-width: 565px) {
+  .hexagon.even {
+    margin-top: 0;
+  }
+
+  .hexagon-row {
+    clear: none;
+  }
+
+  .hexagon-row:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .hexagon {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .hex-inner.about {
+    margin-top: 137%;
+  }
+}
+
+.beanformed {
+  background: white url("./images/beanformed.png") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.packrats {
+  background: white url("./images/packrats.png") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.road_trippin_wiki {
+  background: white url("./images/road_trippin_wiki.png") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+/*About Page*/
+.about {
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.footer-wrapper {
+  background: #222;
+  height: 105px;
+  position: relative
+}
+
+.footer {
+  display: inline-flex;
+  position: absolute;
+  left: 52%;
+  transform: translate(-48%, 0);
+}
+
+.footer a {
+  margin-right: 50px;
+}
+
+.footer .hex-inner {
+  margin-top: 0;
+  left: 9px;
+  width: 44px;
+}
+
+.footer-about {
+  background: white url("./images/envelope.png") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.profile-hex {
+  margin-left: 49%;
+  transform: translate(-50%, 0);
+  background: white url("./images/profile.png") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.profile-hex {
+  width: 80px;
+  height: 136px;
+  background-color: white;
+  position: relative;
+  top: 6px;
+  left: 6px;
+}
+
+.profile-hex:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-left: 40px solid white;
+  border-top: 68px solid transparent;
+  border-bottom: 68px solid transparent;
+  position: absolute;
+  right: -40px;
+}
+
+.profile-hex:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  left: -40px;
+  border-right: 40px solid white;
+  border-top: 68px solid transparent;
+  border-bottom: 68px solid transparent;
+}
+
+.about-body {
+  margin: 0 20% 50px;
+  line-height: 25px;
+}
+
+.about-body a {
+  text-decoration: none;
+  color: #2F939F;
+}
+
+.about-body a:visited {
+  color: #FFC437;
+}
+
+@media (max-width: 565px) {
+  .about-body {
+    margin: 0 10% 25px;
+  }
+
+  .footer .hex-inner {
+    width: 38px;
+  }
+}
+
+@media (max-width: 364px) {
+  .footer {
+    display: inline-block;
+  }
+
+  .footer a {
+    margin-right: 32px;
+  }
+}

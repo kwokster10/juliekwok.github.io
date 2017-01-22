@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<div class="wrapper">
+  <div class="home">
+    <div class="hexagon-row">
+      <div class="hexagon">
+        <div class="left color-one"></div>
+        <div class="middle color-one">
+          <div class="hex-inner-wrapper">
+            {% for info in site.data.social %}
+            <a href="{{info.url}}" class="hex-inner-link-{{forloop.index}}" target="_blank">
+              <div class="hex-inner {{info.name}}"></div>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="right color-one"></div>
+      </div>
+      <div class="hexagon even hex-{{site.data.about_me.name}}">
+        <div class="left color-two"></div>
+        <a class="post-link" href="{{site.data.about_me.url}}">
+          <div class="middle color-two">
+            {{site.data.about_me.name | capitalize}}
+          </div>
+        </a>
+        <a href="mailto:{{site.data.about_me.email}}">
+          <div class="hex-inner {{site.data.about_me.name}}"></div>
+        </a>
+        <div class="right color-two"></div>
+      </div>
+      <div class="hexagon">
+        <div class="left color-three"></div>
+        <div class="middle color-three">
+          <span class="projects">Projects</span>
+          <div class="hex-inner-wrapper">
+            {% for info in site.data.personal_projects %}
+            <a href="{{info.url}}" class="hex-inner-link-{{forloop.index}}" target="_blank">
+              <div class="hex-inner {{info.name}}"></div>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="right color-three"></div>
+      </div>
+    </div>
+    <div class="hexagon-row">
+      <div class="hexagon">
+        <div class="left color-four"></div>
+        <div class="middle color-four">
+          Work
+          <div class="hex-inner-wrapper">
+            {% for info in site.data.work_experience %}
+            <a href="{{info.url}}" class="hex-inner-link-{{forloop.index}}" target="_blank">
+              <div class="hex-inner {{info.name | downcase | split: ' ' | join: '_'}}"></div>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="right color-four"></div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="footer-wrapper">
+  <div class="footer">
+    {% for info in site.data.social %}
+    <a href="{{info.url}}" target="_blank">
+      <div class="hex-inner {{info.name}}"></div>
+    </a>
+    {% endfor %}
+    <a href="mailto:{{site.data.about_me.email}}">
+      <div class="hex-inner footer-{{site.data.about_me.name}}"></div>
+    </a>
+  </div>
+</div>

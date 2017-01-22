@@ -1,0 +1,57 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Julie Kwok
+email: info@juliekwok.com
+description: Portfolio site for web developer, Julie Kwok.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: http://juliekwok.com # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+data:
+  about_me:
+    name: about
+    url: /about
+    email: info@juliekwok.com
+  education:
+    name: General Assembly
+    url: https://generalassemb.ly
+  social:
+    - name: linkedin
+      url: https://www.linkedin.com/in/juliekwok
+    - name: github
+      url: https://github.com/kwokster10
+    - name: medium
+      url: https://medium.com/@jkwok
+  personal_projects:
+    - name: beanformed
+      url: http://beanformed.herokuapp.com/
+    - name: packrats
+      url: http://packrats.herokuapp.com/
+    - name: road_trippin_wiki
+      url: http://roadtrippin-wiki.herokuapp.com/
+  work_experience:
+    - name: Cyrus Innovation
+      url: http://www.cyrusinnovation.com/
+    - name: XO Group
+      url: http://xogroupinc.com/
