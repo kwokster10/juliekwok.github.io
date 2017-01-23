@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="wrapper">
+  <h1>Welcome</h1>
   <div class="home">
     <div class="hexagon-row">
       <div class="hexagon">
@@ -18,16 +19,20 @@ layout: default
         </div>
         <div class="right color-one"></div>
       </div>
-      <div class="hexagon even hex-{{site.data.about_me.name}}">
+      <div class="hexagon even">
         <div class="left color-two"></div>
-        <a class="post-link" href="{{site.data.about_me.url}}">
-          <div class="middle color-two">
-            {{site.data.about_me.name | capitalize}}
+        <div class="middle color-two">
+          <div class="hex-inner-wrapper">
+            <a href="{{site.data.about_me.url}}" class="hex-inner-link-1">
+              <div class="hex-inner {{site.data.about_me.name}}-hex">
+                <span>{{site.data.about_me.name | uppercase}}</span>
+              </div>
+            </a>
+            <a href="mailto:{{site.data.about_me.email}}" class="hex-inner-link-2">
+              <div class="hex-inner email"></div>
+            </a>
           </div>
-        </a>
-        <a href="mailto:{{site.data.about_me.email}}">
-          <div class="hex-inner {{site.data.about_me.name}}"></div>
-        </a>
+        </div>
         <div class="right color-two"></div>
       </div>
       <div class="hexagon">

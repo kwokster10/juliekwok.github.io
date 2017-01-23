@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   height: 100%;
+  font-family: 'Poiret One', cursive;
 }
 
 body {
@@ -14,9 +15,17 @@ body {
   text-align: center;
 }
 
+.wrapper h1 {
+  color: #FFF;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
 .home {
   display: inline-block;
+  margin-left: -45px;
 }
+
 
 .hexagon {
   float: left;
@@ -113,14 +122,6 @@ body {
   border-left-color: #6E2032;
 }
 
-.post-link {
-  color: #FFF;
-}
-
-.post-link > .color-five, .post-link > .color-three {
-  color: #1F2D3D;
-}
-
 .hex-inner-wrapper {
   margin-top: 59%;
   margin-left: 14%;
@@ -157,13 +158,10 @@ body {
   border-bottom: 34px solid transparent;
 }
 
-.middle.color-two {
-  text-transform: uppercase;
-}
-
 .middle.color-four {
   line-height: 65px;
   color: white;
+  font-size: 22px;
 }
 
 .middle.color-three {
@@ -173,7 +171,13 @@ body {
 .projects {
   position: absolute;
   top: -80px;
-  right: 30px;
+  right: 27px;
+  font-size: 22px;
+}
+
+.middle.color-two > .hex-inner-wrapper {
+  margin-top: 73%;
+  margin-left: 3%;
 }
 
 .middle.color-three > .hex-inner-wrapper {
@@ -185,14 +189,7 @@ body {
   margin-left: 3%;
 }
 
-.hex-about {
-  position: relative;
-}
-
-.hex-inner.about {
-  position: absolute;
-  top: 48%;
-  left: 42%;
+.hex-inner.email {
   background: white url("./images/envelope.png") no-repeat 50% 50%;
   background-size: contain;
 }
@@ -204,6 +201,16 @@ body {
 
 .hex-inner-link-3 div {
   margin-top: -32px;
+}
+
+.about-hex span {
+  position: absolute;
+  bottom: -70px;
+  right: 2px;
+  font-size: 14px;
+  font-weight: 900;
+  color: black;
+  text-transform: capitalize;
 }
 
 .github {
@@ -232,6 +239,10 @@ body {
 }
 
 @media (max-width: 565px) {
+  .home {
+    margin-left: 0;
+  }
+
   .hexagon.even {
     margin-top: 0;
   }
@@ -248,10 +259,6 @@ body {
     float: none;
     margin-right: 0;
     margin-bottom: 0;
-  }
-
-  .hex-inner.about {
-    margin-top: 137%;
   }
 }
 
