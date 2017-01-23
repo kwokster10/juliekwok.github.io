@@ -15,10 +15,11 @@ body {
   text-align: center;
 }
 
-.wrapper h1 {
+.wrapper .title {
   color: #FFF;
-  text-transform: uppercase;
   margin-bottom: 40px;
+  text-transform: capitalize;
+  font-variant: small-caps;
 }
 
 .home {
