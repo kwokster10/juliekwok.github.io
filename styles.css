@@ -212,6 +212,7 @@ body {
   font-weight: 900;
   color: black;
   text-transform: capitalize;
+  z-index: 5;
 }
 
 .github {
