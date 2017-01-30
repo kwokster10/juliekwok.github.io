@@ -17,6 +17,7 @@ title: Julie Kwok
 description: Portfolio site for fullstack web developer, Julie Kwok.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: http://juliekwok.com # the base hostname & protocol for your site, e.g. http://example.com
+google_analytics: UA-67062219-2
 
 # Build settings
 markdown: kramdown
