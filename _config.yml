@@ -45,11 +45,11 @@ data:
       url: https://medium.com/@jkwok
   personal_projects:
     - name: beanformed
-      url: http://beanformed.herokuapp.com/
+      url: https://beanformed.herokuapp.com/
     - name: packrats
-      url: http://packrats.herokuapp.com/
+      url: https://packrats.herokuapp.com/
     - name: road_trippin_wiki
-      url: http://roadtrippin-wiki.herokuapp.com/
+      url: https://road-trippin-wiki.herokuapp.com/
   work_experience:
     - name: Cyrus Innovation
       url: http://www.cyrusinnovation.com/
